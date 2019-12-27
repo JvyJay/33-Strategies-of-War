@@ -1,3 +1,11 @@
+import self from './img/self.png'; // HELMET IMG
+import team from './img/team.png'; // CASTLE IMG
+import defense from './img/defense.png'; // SHIELD IMG
+import offense from './img/offense.png'; //SWORDS CLASHING IMG
+import dirty from './img/dirty.png'; //BLOODY SWORD IMG
+
+// STRATEGY DATA
+// SELF DIRECTED WARFARE DATA
 export const selfDirectedWar = [
   {
     strategy: 1,
@@ -28,6 +36,7 @@ export const selfDirectedWar = [
   }
 ];
 
+// ORGANIZATIONAL (TEAM) WARFARE DATA
 export const teamWar = [
   {
     strategy: 5,
@@ -52,6 +61,7 @@ export const teamWar = [
   }
 ];
 
+// DEFENSIVE WARFARE DATA
 export const defensiveWar = [
   {
     strategy: 8,
@@ -82,6 +92,7 @@ export const defensiveWar = [
   }
 ];
 
+// OFFENSIVE WARFARE DATA
 export const offensiveWar = [
   {
     strategy: 12,
@@ -159,6 +170,7 @@ export const offensiveWar = [
   }
 ];
 
+// UNCONVENTIONAL (DIRTY) WARFARE DATA
 export const dirtyWar = [
   {
     strategy: 23,
@@ -229,5 +241,39 @@ export const dirtyWar = [
     title: 'SOW UNCERTAINTY AND PANIC THROUGH ACTS OF TERROR:',
     subtitle: 'THE CHAIN-REACTION STRATEGY',
     content: `Terror is the ultimate way to paralyze a people's will to resist and destroy their ability to plan a strategic response. The goal in a terror campaign is not battlefield victory but causing maximum chaos and provoking the other side into desperate overreaction. To plot the most effective counter-strategy, victims of terror must stay balanced. one's rationality is the last line of defense.`
+  }
+];
+
+// BUTTON LINKS DATA
+export const list = [
+  {
+    id: 1,
+    title: 'Self-Directed Warfare',
+    img: self,
+    alt: 'Helmet'
+  },
+  {
+    id: 2,
+    title: 'Organizational (Team) Warfare',
+    img: team,
+    alt: 'Castle'
+  },
+  {
+    id: 3,
+    title: 'Defensive Warfare',
+    img: defense,
+    alt: 'Shield'
+  },
+  {
+    id: 4,
+    title: 'Offensive Warfare',
+    img: offense,
+    alt: 'Sword Clash'
+  },
+  {
+    id: 5,
+    title: 'Unconventional (Dirty) Warfare',
+    img: dirty,
+    alt: 'Bloody Sword'
   }
 ];

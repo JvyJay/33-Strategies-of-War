@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import {
-  Collapse,
   Navbar,
-  NavbarToggler,
   NavbarBrand,
   Nav,
   NavItem,
@@ -14,13 +13,9 @@ import {
 } from 'reactstrap';
 
 const Navigation = () => {
-  const [state, setState] = useState(false);
-  const toggle = () => setState(!state);
   return (
     <Navbar color='dark' light expand='lg'>
       <NavbarBrand className='text-white'>33 Strategies of War</NavbarBrand>
-      <NavbarToggler onClick={toggle}></NavbarToggler>
-      <Collapse state={state}></Collapse>
       <Nav>
         <NavItem>
           <NavLink className='text-white'>Home</NavLink>
@@ -29,7 +24,7 @@ const Navigation = () => {
           <DropdownToggle className='text-info' nav caret>
             Strategy
           </DropdownToggle>
-          <DropdownMenu right>
+          <DropdownMenu left='true'>
             <DropdownItem>Self-Directed Warfare</DropdownItem>
             <DropdownItem>Organizational {`(Team)`} Warfare</DropdownItem>
             <DropdownItem>Defensive Warfare</DropdownItem>
