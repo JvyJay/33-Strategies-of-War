@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
-import {
-  Card,
-  CardImg,
-  CardText,
-  CardBody,
-  CardTitle,
-  CardSubtitle
-} from 'reactstrap';
+import React from 'react';
+import { Card, CardText, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
 
 export default function Content(props) {
   return (
-    <Card>
-      <CardImg top width='100%' src={props.img} alt='Card image cap' />
-      <CardBody>
-        <CardTitle>{props.title}</CardTitle>
-        <CardSubtitle>{props.subtitle}</CardSubtitle>
-        <CardText>{props.content}</CardText>
+    <Card className='flex flex-column justify-content-center align-items-center text-center'>
+      <CardBody className='w-50'>
+        <img width='50px' src={props.img} alt='Card cap' />
+        <CardTitle className='font-weight-bolder'>{props.title}</CardTitle>
+        <CardSubtitle className='text-info'>{props.subtitle}</CardSubtitle>
+        <CardText className='font-weight-light'>{props.content}</CardText>
       </CardBody>
     </Card>
   );

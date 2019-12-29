@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
-import Navigation from './components/Navigation';
-import ButtonLinks from './components/ButtonLinks';
+import React from 'react';
+import NavRouter from './components/NavRouter';
 
 const App = () => {
   return (
     <div>
-      <Navigation />
-      <ButtonLinks />
+      <NavRouter />
     </div>
   );
 };
