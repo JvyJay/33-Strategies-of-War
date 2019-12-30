@@ -12,7 +12,7 @@ export const selfDirectedWar = [
     title: 'DECLARE WAR ON YOUR ENEMIES:',
     subtitle: 'THE POLARITY STRATEGY',
     content:
-      'Life is endless battle and conflict, and you cannot fight effectively unless you can identify your enemies. Learn to smoke out you enemies, to spot them by the signs and patterns that reveal hostility. Then, once you have them in your sights, inwardly declare war. Your enemies can fill you with purpose and direction',
+      'Life is endless battle and conflict, and you cannot fight effectively unless you can identify your enemies. Learn to smoke out you enemies, to spot them by the signs and patterns that reveal hostility. Then, once you have them in your sights, inwardly declare war. Your enemies can fill you with purpose and direction.',
     img: self
   },
   {
