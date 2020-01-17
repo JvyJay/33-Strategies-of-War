@@ -5,15 +5,17 @@ import { defensiveWar } from '../data';
 const DefensiveWarfare = () => {
   return (
     <>
-      <h1 className='text-lg-center p-4'>Defensive Warfare</h1>
+      <h1 className='text-lg-center p-4 text-center'>Defensive Warfare</h1>
       {defensiveWar.map(item => (
-        <Content
-          key={item.strategy}
-          img={item.img}
-          title={item.title}
-          subtitle={item.subtitle}
-          content={item.content}
-        />
+        <div className='container'>
+          <Content
+            key={item.strategy}
+            img={item.img}
+            title={item.title}
+            subtitle={item.subtitle}
+            content={item.content}
+          />
+        </div>
       ))}
     </>
   );

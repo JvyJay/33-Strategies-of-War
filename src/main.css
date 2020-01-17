@@ -2,8 +2,29 @@
   background-color: lightskyblue;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+footer {
+  text-align: center;
+  background-color: #343a40;
+  color: #fff;
+  padding: 25px;
+}
+
+footer p {
+  margin: 0;
+}
+
 @media (max-width: 500px) {
   .break {
     width: 75% !important;
+  }
+  .container {
+    margin-bottom: 10px;
+    width: 100%;
   }
 }
