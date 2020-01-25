@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import { list } from '../data';
-import '../main.css';
 
 const ButtonLinks = () => {
   return (
