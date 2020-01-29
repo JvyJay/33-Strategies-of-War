@@ -1,18 +1,19 @@
 import React from 'react';
-import { StrategyProvider } from './components/StrategyProvider';
+import { StrategyContext } from './components/StrategyProvider';
 import NavRouter from './components/NavRouter';
 import Footer from './components/Footer';
+import data from './data';
 
 import './main.css';
 
 const App = () => {
   return (
-    <StrategyProvider>
+    <StrategyContext.Provider value={data}>
       <div>
         <NavRouter />
         <Footer />
       </div>
-    </StrategyProvider>
+    </StrategyContext.Provider>
   );
 };
 

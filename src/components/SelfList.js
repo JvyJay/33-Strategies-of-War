@@ -1,11 +1,9 @@
 import React, { useContext } from 'react';
 import { StrategyContext } from './StrategyProvider';
-
 import Content from './Content';
-// import { selfDirectedWar } from '../data';
 
 const SelfList = () => {
-  const [strategy] = useContext(StrategyContext);
+  const strategy = useContext(StrategyContext);
   return (
     <>
       <h1 className='text-lg-center p-4 text-center'>Self-Directed Warfare</h1>

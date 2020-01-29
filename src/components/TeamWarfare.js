@@ -2,10 +2,9 @@ import React, { useContext } from 'react';
 import { StrategyContext } from './StrategyProvider';
 
 import Content from './Content';
-// import { teamWar } from '../data';
 
 const TeamWarfare = () => {
-  const [strategy] = useContext(StrategyContext);
+  const strategy = useContext(StrategyContext);
   return (
     <>
       <h1 className='text-lg-center p-4 text-center'>
