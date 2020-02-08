@@ -1,13 +1,30 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { StrategyContext } from './StrategyProvider';
 import Content from './Content';
+import { Form, FormGroup, Input } from 'reactstrap';
+import SearchForm from './SearchForm';
 
 const SelfList = () => {
   const strategy = useContext(StrategyContext);
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchResults, setResults] = useState([]);
+
+  const handleChanges = event => {
+    setSearchTerm(event.target.value);
+  };
+
+  useEffect(() => {
+    const result = strategy.filter(item =>
+      item.title.toLowerCase().includes(searchTerm)
+    );
+    setResults(result);
+  }, [searchTerm]);
+
   return (
     <>
       <h1 className='text-lg-center p-4 text-center'>Self-Directed Warfare</h1>
-      {strategy.map(item => {
+      <SearchForm value={searchTerm} handle={handleChanges} />
+      {searchResults.map(item => {
         if (item.id === 'Self-Directed-Warfare')
           return (
             <div key={item.strategy} className='container'>

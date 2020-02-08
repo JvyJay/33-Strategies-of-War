@@ -8,11 +8,18 @@
   margin-bottom: 25px;
 }
 
+.footer-wrap {
+  padding-bottom: 2.5rem;
+}
+
 footer {
+  position: absolute;
+  bottom: 0;
   text-align: center;
   background-color: #343a40;
   color: #fff;
   padding: 25px;
+  width: 100%;
 }
 
 footer p {
