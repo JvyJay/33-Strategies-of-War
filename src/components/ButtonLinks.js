@@ -12,7 +12,7 @@ const ButtonLinks = () => {
           <Link key={item.id} to={`/${item.url}`}>
             <Row>
               <Col className='text-white'>
-                <div className='links flex-center flex-column m-4 p-4 shadow-lg p-3 mb-5 rounded'>
+                <div className='links flex-center flex-column m-4 m-sm-5 p-4 shadow-lg p-3 mb-5 rounded'>
                   <img width='100px' src={item.img} alt={item.alt} />
                   <h1>{item.title}</h1>
                 </div>

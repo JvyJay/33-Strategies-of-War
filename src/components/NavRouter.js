@@ -23,7 +23,7 @@ const NavRouter = () => {
   return (
     <Router>
       <Navbar color='dark' light expand='lg'>
-        <NavbarBrand className='text-white'>33 Strategies of War</NavbarBrand>
+        <NavbarBrand className='text-white'>33 Strategies</NavbarBrand>
         <Nav>
           <NavItem>
             <NavLink>
@@ -36,7 +36,7 @@ const NavRouter = () => {
             <DropdownToggle className='text-info' nav caret>
               Strategy
             </DropdownToggle>
-            <DropdownMenu right='true'>
+            <DropdownMenu left='true'>
               <DropdownItem>
                 <Link className='text-info' to='/self-directed-warfare'>
                   Self-Directed Warfare
