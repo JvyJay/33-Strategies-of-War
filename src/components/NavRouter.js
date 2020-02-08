@@ -36,7 +36,7 @@ const NavRouter = () => {
             <DropdownToggle className='text-info' nav caret>
               Strategy
             </DropdownToggle>
-            <DropdownMenu left='true'>
+            <DropdownMenu right='true'>
               <DropdownItem>
                 <Link className='text-info' to='/self-directed-warfare'>
                   Self-Directed Warfare
