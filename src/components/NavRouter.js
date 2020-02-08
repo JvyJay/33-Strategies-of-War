@@ -22,7 +22,7 @@ import {
 const NavRouter = () => {
   return (
     <Router>
-      <Navbar color='dark' light expand='lg'>
+      <Navbar className='nav-text' color='dark' light expand='lg'>
         <NavbarBrand className='text-white'>33 Strategies</NavbarBrand>
         <Nav>
           <NavItem>

@@ -35,3 +35,14 @@ footer p {
     width: 100%;
   }
 }
+
+@media (max-width: 400px) {
+  .button-text {
+    font-size: 1.2rem;
+  }
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
