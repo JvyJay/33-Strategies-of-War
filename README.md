@@ -5,3 +5,8 @@ App takes the book, "The 33 Strategies of War" by Robert Greene and puts togethe
 # Styling
 
 The styling used for this app was Reactstrap and some small basic styling.
+
+# Made with
+
+- React
+- Reactstrap
