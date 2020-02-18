@@ -5,6 +5,7 @@ import { list } from '../data';
 
 const ButtonLinks = () => {
   return (
+    // Home page button links
     <Container>
       <h1 className='p-4 text-center'>Strategies</h1>
       <div className='text-center'>

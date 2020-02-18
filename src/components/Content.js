@@ -4,6 +4,7 @@ import '../main.css';
 
 export default function Content(props) {
   return (
+    // Strategy cards
     <Card
       key={props.key}
       className='flex flex-column justify-content-center align-items-center text-center bg-light shadow-sm p-3 mb-5 border border-info'

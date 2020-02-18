@@ -9,10 +9,12 @@ const SelfList = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setResults] = useState([]);
 
+  // Search form typing functionality
   const handleChanges = event => {
     setSearchTerm(event.target.value);
   };
 
+  // Search filter functionality
   useEffect(() => {
     const result = strategy.filter(item =>
       item.title.toLowerCase().includes(searchTerm)
